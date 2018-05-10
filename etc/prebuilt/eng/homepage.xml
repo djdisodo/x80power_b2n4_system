@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:ftm="http://schemas.ftm.com/res/ftm"
+    ftm:layout_width="match_parent"  
+    ftm:layout_height="match_parent"
+    ftm:layout_weight="20" 
+    ftm:id="linearLayout"
+    ftm:orientation="vertical" >  
+	
+  <Title
+        ftm:layout_width="match_parent"  
+        ftm:layout_height="wrap_content" 
+        ftm:id="title"
+		ftm:orientation="horizontal"
+        ftm:layout_weight="1">
+	<ImageView 
+		ftm:drawable="icon-drawable-mdpi"
+		ftm:layout_width="wrap_content"  
+        ftm:layout_height="wrap_content"
+		ftm:layout_gravity="vertical_center"
+		ftm:id="titleIcon" 
+    	ftm:layout_toLeftMargin="8"/>
+	 <TextView      
+		ftm:text="FTM TEST TOOL"   
+		ftm:textColor="white"
+		ftm:layout_width="wrap_content"  
+		ftm:layout_height="wrap_content"
+		ftm:layout_gravity="vertical_center"		
+		ftm:layout_toLeftMargin="4"
+		ftm:id="titleName" />
+
+   </Title>
+   
+
+
+   <ListView
+        ftm:layout_width="match_parent"  
+        ftm:layout_height="wrap_content" 
+        ftm:id="list"
+        ftm:layout_weight="19" >
+	<SectionLine
+		ftm:id="title_split_line"
+		ftm:layout_width="match_parent"  
+        ftm:layout_height="6" 
+		ftm:background="dark blue"
+     />
+ 
+	<Item ftm:id="auto_test"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:ltoTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView      
+				ftm:text="Auto Test"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:layout_gravity="vertical_center"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName1" />
+	<!--	  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:layout_gravity="vertical_center"
+				ftm:id="titleIcon1" 
+				ftm:layout_toRightMargin="8"/>
+-->
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="manual_test"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView      
+				ftm:text="Manual Test"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName2" />
+<!--		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon2" 
+				ftm:layout_toRightMargin="8"/>-->
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>	
+	<Item ftm:id="test_report"
+	      ftm:layout_width="match_parent"  
+              ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView      
+				ftm:text="Test Report"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName3" />
+	</Item>	
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="auto_reboot"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+		  ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView      
+				ftm:text="Reboot into Android"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName5" />
+	</Item>
+
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+
+	
+  </ListView>
+
+
+
+
+
+
+
+</LinearLayout>  

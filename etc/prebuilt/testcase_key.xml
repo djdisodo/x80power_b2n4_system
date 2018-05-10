@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:ftm="http://schemas.ftm.com/res/ftm"
+    ftm:layout_width="match_parent" 
+    ftm:layout_height="match_parent"
+    ftm:id="linearLayout"
+	ftm:layout_weight="20" 
+    ftm:orientation="vertical" >
+	
+	<View      
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="match_parent"
+		ftm:layout_weight="20"/>
+	
+	<BottomLayout
+		ftm:layout_width="match_parent"  
+        ftm:layout_height="wrap_content" 
+        ftm:id="bottomlayout"
+		ftm:background="blue" 
+		ftm:layout_gravity="bottom"
+        ftm:orientation="horizontal"
+        ftm:layout_weight="2" >
+	<LinearLayout 
+		ftm:layout_width="wrap_content"  
+		ftm:layout_height="wrap_content"
+		ftm:layout_gravity="center"
+		ftm:id="linearLayout2"
+		ftm:orientation="horizontal" > 
+		<Button
+			ftm:text="失败"   
+			ftm:textColor="white"
+			ftm:layout_toLeftMargin="20"
+			ftm:layout_width="wrap_content"  
+			ftm:layout_height="wrap_content"
+			ftm:ctrl_state="normal"
+			ftm:background="blue" 
+			ftm:toLeftMargin="32"
+			ftm:toRightMargin="32"
+			ftm:toTopMargin="16"
+			ftm:toBottomMargin="16"
+			ftm:id="testcase_fail"/>
+		<Button
+			ftm:text="重测"   
+			ftm:textColor="white"
+			ftm:layout_toLeftMargin="20"
+			ftm:layout_width="wrap_content"  
+			ftm:layout_height="wrap_content"
+			ftm:background="blue" 
+			ftm:ctrl_state="normal"
+			ftm:toLeftMargin="32"
+			ftm:toRightMargin="32"
+			ftm:toTopMargin="16"
+			ftm:toBottomMargin="16"
+			ftm:id="test_repeat"/>
+	</LinearLayout>
+
+  </BottomLayout>
+
+</LinearLayout>  

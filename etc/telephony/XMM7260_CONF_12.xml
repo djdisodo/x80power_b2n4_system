@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE author [
+	   <!ENTITY channels_default SYSTEM "channels_default.xml" >
+	   <!ENTITY libs_default SYSTEM "libs_default.xml" >
+]>
+
+<telephony_config>
+	<modems_info>
+		<modem_info>
+			<core
+				name="7260"
+				flashless="false"
+				secured="false"
+				ipc="shm"
+				ipcLogging="shm"
+				ipcDump="shm"
+				swRevision="NA"
+				hwRevision="NA"
+			/>
+			<modules
+				mmgr_xml="mmgr_7260_conf_4.xml"
+				rril_txt="rril_7260_conf_4.txt"
+			/>
+			<tlvs_info>
+				<tlv_info
+					filename="NA"
+				/>
+			</tlvs_info>
+			&channels_default;
+			&libs_default;
+		</modem_info>
+	</modems_info>
+</telephony_config>

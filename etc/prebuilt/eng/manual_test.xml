@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:ftm="http://schemas.ftm.com/res/ftm"
+    ftm:layout_width="match_parent"  
+    ftm:layout_height="match_parent"
+    ftm:layout_weight="20" 
+    ftm:id="linearLayout"
+    ftm:orientation="vertical" >  
+
+  <Title
+        ftm:layout_width="match_parent"  
+        ftm:layout_height="wrap_content" 
+        ftm:id="title"
+		ftm:orientation="horizontal"
+        ftm:layout_weight="1">
+	<ImageView 
+		ftm:drawable="icon-drawable-mdpi"
+		ftm:layout_width="wrap_content"  
+        ftm:layout_height="wrap_content"
+		ftm:layout_gravity="vertical_center"
+		ftm:id="titleIcon" 
+    	ftm:layout_toLeftMargin="8"/>
+	 <TextView      
+		ftm:text="Manual Functional Test"   
+		ftm:textColor="white"
+		ftm:layout_width="wrap_content"  
+		ftm:layout_height="wrap_content"
+		ftm:layout_gravity="vertical_center"		
+		ftm:layout_toLeftMargin="4"
+		ftm:id="titleName" />
+
+   </Title>
+   
+
+
+   <ListView
+        ftm:layout_width="match_parent"  
+        ftm:layout_height="wrap_content" 
+        ftm:id="list"
+        ftm:layout_weight="17" >
+	<SectionLine
+		ftm:id="title_split_line"
+		ftm:layout_width="match_parent"  
+        ftm:layout_height="6" 
+		ftm:background="dark blue"
+     />
+ 
+	<Item ftm:id="testcase_touch"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView      
+				ftm:text="Touch Panel Test"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:layout_gravity="vertical_center"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName1" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:layout_gravity="vertical_center"
+				ftm:id="titleIcon1" 
+				ftm:layout_toRightMargin="8"/>
+
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	
+	<Item ftm:id="testcase_sensors"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Sensors"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName5" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon5" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	
+	<Item ftm:id="testcase_comprehensive"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Comprehensive Test One"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName7" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon7" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="testcase_manualjudgment"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Comprehensive Test Two"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName15" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon15" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>	
+	<Item ftm:id="testcase_speaker"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Speaker"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName8" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon8" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="testcase_receivermic"
+	      ftm:layout_width="match_parent"
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+            <TextView
+				ftm:text="Earphone and Board Microphone"
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName4" />
+            <ImageView
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon4"
+				ftm:layout_toRightMargin="8"/>
+	</Item>	
+	<SectionLine
+		ftm:layout_width="match_parent"
+		ftm:layout_height="3"
+		ftm:background="white"
+	/>
+	<Item ftm:id="testcase_headsetmic"
+	      ftm:layout_width="match_parent"
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+            <TextView
+				ftm:text="Earphone and Headset Microphone"
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"
+				ftm:layout_height="wrap_content"
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName4" />
+            <ImageView
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon4" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>	
+	
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+
+	/>	
+	
+	<Item ftm:id="testcase_camera"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Read Camera"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName11" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon11" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="testcase_camerafront"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Front Camera"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName11" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon11" 
+
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="testcase_wifiandbt"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Wifi and Bluetooth"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName5" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon5" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+
+	<Item ftm:id="testcase_gps"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="GPS"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName13" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon13" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	<Item ftm:id="testcase_key"
+	      ftm:layout_width="match_parent"  
+          ftm:layout_height="wrap_content"
+	      ftm:text_type="0"
+		  ftm:ctrl_state="normal"
+		  ftm:layout_toTopMargin="16"
+		  ftm:layout_toBottomMargin="16">
+		  	<TextView
+				ftm:text="Keyboard Test"   
+				ftm:textColor="white"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"		
+				ftm:layout_toLeftMargin="8"
+				ftm:id="titleName14" />
+		  	<ImageView 
+				ftm:drawable="btn_check_off"
+				ftm:layout_width="wrap_content"  
+				ftm:layout_height="wrap_content"
+				ftm:id="titleIcon14" 
+				ftm:layout_toRightMargin="8"/>
+	</Item>
+	<SectionLine
+		ftm:layout_width="match_parent"  
+		ftm:layout_height="3" 
+		ftm:background="white"
+	/>
+	
+	
+  </ListView>
+
+ <BottomLayout
+	ftm:layout_width="match_parent"  
+        ftm:layout_height="wrap_content" 
+        ftm:id="bottomlayout"
+        ftm:orientation="horizontal"
+        ftm:layout_weight="2" >
+	<LinearLayout 
+		ftm:layout_width="wrap_content"  
+		ftm:layout_height="wrap_content"
+		ftm:layout_gravity="center"
+		ftm:id="linearLayout2"
+		ftm:orientation="horizontal" > 
+		 <Button
+			ftm:text="Prev Page"   
+			ftm:textColor="white"
+			ftm:layout_width="wrap_content"  
+			ftm:layout_height="wrap_content" 
+			ftm:background="blue" 
+			ftm:ctrl_state="normal"
+			ftm:toLeftMargin="32"
+			ftm:toRightMargin="32"
+			ftm:toTopMargin="16"
+			ftm:toBottomMargin="16"
+			ftm:id="pre_page"/>
+		<Button
+			ftm:text="Next Page"   
+			ftm:textColor="white"
+			ftm:layout_toLeftMargin="20"
+			ftm:layout_width="wrap_content"  
+			ftm:layout_height="wrap_content"
+			ftm:ctrl_state="normal"
+			ftm:background="blue" 
+			ftm:toLeftMargin="32"
+			ftm:toRightMargin="32"
+			ftm:toTopMargin="16"
+			ftm:toBottomMargin="16"
+			ftm:id="next_page"/>
+		<Button
+			ftm:text="Exit"   
+			ftm:textColor="white"
+			ftm:layout_toLeftMargin="20"
+			ftm:layout_width="wrap_content"  
+			ftm:layout_height="wrap_content"
+			ftm:background="blue" 
+			ftm:ctrl_state="normal"
+			ftm:toLeftMargin="32"
+			ftm:toRightMargin="32"
+			ftm:toTopMargin="16"
+			ftm:toBottomMargin="16"
+			ftm:id="exit_page"/>
+	</LinearLayout>
+
+  </BottomLayout>
+
+
+
+
+
+</LinearLayout>  

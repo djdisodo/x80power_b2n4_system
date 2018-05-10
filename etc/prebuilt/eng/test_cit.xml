@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:ftm="http://schemas.ftm.com/res/ftm"
+    ftm:layout_width="match_parent" 
+    ftm:layout_height="match_parent"
+    ftm:id="linearLayout"
+	ftm:layout_weight="20" 
+    ftm:orientation="vertical" >
+
+
+</LinearLayout>  

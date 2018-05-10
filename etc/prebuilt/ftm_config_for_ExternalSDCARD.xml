@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:ftm="http://schemas.ftm.com/res/ftm"
+    ftm:headset_retry_times="30"  
+    ftm:headset_retry_interval="300"  
+    ftm:headset_input_event_name="xgold_afe-audio Headset"
+	ftm:keyinput_enable="0">  
+	
+  <brightness
+        ftm:enable="0" 
+        ftm:dev_path="/sys/devices/virtual/leds/lcd-backlight/brightness"     
+		ftm:retry_interval="1000" />
+  <camera
+        ftm:enable="1" 
+        ftm:dev_path="/dev/video0"    
+		ftm:retry_interval="500"   
+        ftm:enable_autopass="1" 
+		ftm:mem_path="/dev/ftm_mem" >
+	<flashlight 
+		ftm:enable="1"
+		ftm:retry_interval="1000"/>		
+  </camera>  
+  <camerafront
+        ftm:enable="1" />		
+  <rgb
+        ftm:enable="0" />			
+  <fmr
+        ftm:enable="1" 
+        ftm:dev_path="/dev/radio0"    
+		ftm:retry_interval="500" />   
+  <speaker
+        ftm:enable="1"    
+		ftm:retry_interval="500" />  
+  <headsetmic
+        ftm:enable="1"    
+		ftm:retry_interval="100" />   
+  <receivemic
+        ftm:enable="1"  
+		ftm:retry_interval="100" />  
+ <citspeakermic
+        ftm:enable="0"    
+		ftm:retry_interval="100" />  
+  <citheadsetmic
+        ftm:enable="0"    
+		ftm:retry_interval="100" />   
+  <citreceivemic
+        ftm:enable="0"  
+		ftm:retry_interval="100" />  
+  <touch
+        ftm:enable="1" 
+        ftm:input_name="goodix-ts"    
+		ftm:retry_interval="300" 
+		ftm:retry_times="30" />   
+  <vibrator
+        ftm:enable="0" 
+        ftm:dev_path="/sys/class/timed_output/vibrator/enable"
+		ftm:retry_interval="1000" /> 
+  <gps
+        ftm:enable="1" /> 
+  <display
+        ftm:enable="0"
+		ftm:retry_interval="1000" /> 
+  <keyboard
+        ftm:enable="1" /> 		
+  <wifiandbt
+        ftm:enable="1"  
+		ftm:retry_interval="500" 
+		ftm:retry_times="20"> 
+	<wifi 
+		ftm:enable="1"/>		
+	<bt 
+		ftm:enable="1" />
+  </wifiandbt>
+	  
+  <comprehensive
+        ftm:enable="1"   
+        ftm:retry_times="50"    
+		ftm:retry_interval="300">
+	<battery 
+		ftm:enable="1"
+		ftm:dev_path="/sys/class/power_supply/battery/uevent"  
+		ftm:voltage_max="4350"
+		ftm:voltage_min="3000"
+		ftm:current_max="10000" 
+		ftm:current_min="-10000" 
+		ftm:temperature_max="45" 
+		ftm:temperature_min="-10" />		
+	<otg 
+		ftm:enable="1" 
+		ftm:dev_path1="/sys/bus/usb/devices/1-1:1.0"  
+		ftm:dev_path2="/sys/bus/usb/devices/1-2:1.0" />
+	<usb 
+		ftm:enable="1" 
+		ftm:dev_path="/sys/class/android_usb/android0/state"  />		
+	<memory 
+		ftm:enable="1" 
+		ftm:ram_path="/proc/meminfo" 
+		ftm:emmc_path="/storage/sdcard0"
+		ftm:sd_path="/storage/sdcard1" />
+	<rfcalibration 
+		ftm:enable="1" 
+		ftm:property="gsm.calib" />		
+	<sim 
+		ftm:enable="1" 
+		ftm:sim1_property="ril.recovery.0.sim.state" 
+		ftm:sim2_property="ril.recovery.1.sim.state"	
+		ftm:value="PRESENT" />	
+  </comprehensive>
+  <manualjudgment
+        ftm:enable="1"> 
+	<display 
+		ftm:enable="1" />	
+	<vibrator 
+		ftm:enable="1" />	
+	<brightness 
+		ftm:enable="1" />
+	<rgb
+		ftm:enable="1" />		
+	<flashlight 
+		ftm:enable="1" />		
+  </manualjudgment>
+  
+  <sensors
+        ftm:enable="1"  
+		ftm:retry_interval="500">  
+	<gsensor
+        ftm:enable="1"  
+        ftm:dev_path="/sys/bus/i2c/devices/2-000e/"  
+        ftm:enable_dev="/sys/bus/i2c/devices/2-000e/enable_device"  
+        ftm:input_name="kionix_accel"  
+        ftm:retry_times="30"  
+        ftm:retry_interval="100" /> 
+	<psensor
+        ftm:enable="1"  
+        ftm:dev_path="/sys/bus/i2c/devices/2-0039/"  
+        ftm:enable_dev="/sys/bus/i2c/devices/2-0039/enable_ps_sensor" 
+        ftm:input_name="Avago proximity sensor" 
+        ftm:retry_times="30"  
+        ftm:retry_interval="100" /> 		
+	<lsensor
+        ftm:enable="1"  
+        ftm:dev_path="/sys/bus/i2c/devices/2-0039/"
+        ftm:enable_dev="/sys/bus/i2c/devices/2-0039/enable_als_sensor"
+        ftm:input_name="Avago light sensor"
+        ftm:retry_times="30"  
+        ftm:retry_interval="100" /> 		
+	<magnetic
+        ftm:enable="1"  
+        ftm:dev_path="/sys/bus/i2c/devices/2-0030/" 
+        ftm:enable_dev="/sys/bus/i2c/devices/2-0030/enable_device" 
+        ftm:input_name="mmc3416x_mag"
+        ftm:retry_times="30"  
+        ftm:retry_interval="100" /> 	
+	<Gyroscope
+        ftm:enable="1"  
+        ftm:dev_path="/sys/bus/i2c/devices/2-006a/"
+        ftm:enable_dev="/sys/bus/i2c/devices/2-006a/enable_device" 
+        ftm:input_name="l3gd20_gyr"
+        ftm:retry_times="30"  
+        ftm:retry_interval="100" /> 			
+  </sensors>  		
+</LinearLayout>  

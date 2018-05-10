@@ -1,0 +1,57 @@
+#
+# OEM Variables
+#
+# GMIN OEM variables are set by "fastboot oem setvar" or "fastboot
+# flash oemvars", and stored as EFI variables.  By default, they are
+# under the fastboot GUID of 1AC80A82-4F0C-456B-9A99-DEBEB431FCC1.
+#
+# The syntax supports "#-style" end of line comments
+#
+# Variable settings are specified as "<var> <val>".  Whitespace around
+# the variable name is removed, as is trailing whitespace at the end
+# of the line.  The value can otherwise contain any printable
+# character and is stored as an 8-bit string in the EFI variable's
+# value.  Non-printable bytes can be encoded with "%xx" URL-style
+# notation.
+#
+# A line of the form:
+#     GUID = xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+# will change the GUID used for subsequent lines.
+#
+
+##########################
+# atomisp camera variables
+
+GUID = ecb54cd9-e5ae-4fdc-a971-e877756068f7
+
+gmin_V1P8GPIO  -1
+gmin_V2P8GPIO  -1
+
+# gc2235 world-facing camera (rear)
+INT33F8:00_CamId     gc2235
+INT33F8:00_CsiPort   1
+INT33F8:00_CsiLanes  2
+INT33F8:00_CamClk    4
+INT33F8:00_ClkSrc    0
+INT33F8:00_eldo1_1p8v       20
+INT33F8:00_eldo1_sel_reg    26
+INT33F8:00_eldo1_ctrl_shift 1
+INT33F8:00_eldo2_1p8v       20
+INT33F8:00_eldo2_sel_reg    27
+INT33F8:00_eldo2_ctrl_shift 2
+
+# gc2235 user-facing camera (front)
+INT33F8:01_CamId     gc2235
+INT33F8:01_CsiPort   0
+INT33F8:01_CsiLanes  2
+INT33F8:01_CamClk    2
+INT33F8:01_ClkSrc    0
+INT33F8:01_eldo1_1p8v       24
+INT33F8:01_eldo1_sel_reg    26
+INT33F8:01_eldo1_ctrl_shift 1
+INT33F8:01_eldo2_1p8v       22
+INT33F8:01_eldo2_sel_reg    27
+INT33F8:01_eldo2_ctrl_shift 2
+
+# PRAM (pstore ram)
+PRAM_Conf  1   # 4 MB
